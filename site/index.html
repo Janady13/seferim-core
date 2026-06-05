@@ -1,0 +1,250 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SEFERIM AGI — ThatAIGuyCore | The G¹⁶ Golden-Ratio Cognitive Substrate</title>
+<meta name="description" content="SEFERIM AGI / ThatAIGuyCore: a golden-ratio, 16-dimensional dynamical-systems substrate for artificial cognition. 69 documented equations, an open-source JavaScript reference implementation, live interactive demos, and cited mathematical foundations.">
+<link rel="canonical" href="https://thataiguy.org/core/">
+<meta name="author" content="Joseph W. Anady">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+<meta property="og:type" content="website">
+<meta property="og:title" content="SEFERIM AGI — ThatAIGuyCore: The G¹⁶ Golden-Ratio Cognitive Substrate">
+<meta property="og:description" content="A 16-dimensional golden-ratio dynamical-systems substrate for artificial cognition — 69 equations, open-source JS reference implementation, live demos.">
+<meta property="og:url" content="https://thataiguy.org/core/">
+<meta property="og:site_name" content="ThatAIGuy.org">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:creator" content="@josephanady">
+<link rel="icon" href="/favicon.svg">
+<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js" crossorigin="anonymous" onload="renderMathInElement(document.body,{delimiters:[{left:'$$',right:'$$',display:true},{left:'\\(',right:'\\)',display:false}]})"></script>
+<script src="/analytics-enhanced.js" defer></script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@graph":[
+ {"@type":"SoftwareSourceCode","@id":"https://thataiguy.org/core/#software","name":"SEFERIM AGI — ThatAIGuyCore","description":"A golden-ratio, 16-dimensional dynamical-systems cognitive substrate (G^16). Zero-dependency JavaScript reference implementation of 69 documented equations.","codeRepository":"https://github.com/Janady13/seferim-core","programmingLanguage":"JavaScript","runtimePlatform":"ECMAScript module (browser + Node.js)","license":"https://opensource.org/licenses/MIT","author":{"@id":"https://thataiguy.org/#person"},"url":"https://thataiguy.org/core/","codeSampleType":"full (reference implementation)","softwareVersion":"1.0.0"},
+ {"@type":"TechArticle","@id":"https://thataiguy.org/core/#article","headline":"SEFERIM AGI — ThatAIGuyCore: The G^16 Golden-Ratio Cognitive Substrate","description":"The mathematics, architecture, and open-source reference implementation of the SEFERIM / ThatAIGuyCore framework.","author":{"@id":"https://thataiguy.org/#person"},"publisher":{"@id":"https://thataiguy.org/#org"},"datePublished":"2026-06-05","dateModified":"2026-06-05","proficiencyLevel":"Expert","about":["Artificial general intelligence","Dynamical systems","Golden ratio","Free energy principle"],"mainEntityOfPage":"https://thataiguy.org/core/"},
+ {"@type":"Person","@id":"https://thataiguy.org/#person","name":"Joseph W. Anady","url":"https://thataiguy.org","sameAs":["https://github.com/Janady13","https://thatdeveloperguy.com"]},
+ {"@type":"Organization","@id":"https://thataiguy.org/#org","name":"ThatAIGuy","url":"https://thataiguy.org"},
+ {"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"ThatAIGuy","item":"https://thataiguy.org/"},{"@type":"ListItem","position":2,"name":"SEFERIM Core","item":"https://thataiguy.org/core/"}]}
+]}
+</script>
+<style>
+:root{--bg:#06060c;--bg2:#0d0d18;--card:#13131f;--line:#23233a;--txt:#eceaf6;--mut:#a9a4c6;--mut2:#878199;--gold:#e7b13a;--cyan:#00e5ff;--violet:#9b6cff;--green:#39ff14}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--txt);font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+a{color:var(--cyan);text-decoration:none}a:hover{text-decoration:underline}
+.wrap{max-width:920px;margin:0 auto;padding:0 22px}
+header.top{position:sticky;top:0;z-index:20;background:rgba(6,6,12,.9);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;padding:12px 22px}
+.brand{font-weight:800;letter-spacing:.5px}.brand b{color:var(--gold)}
+.top nav a{color:var(--mut);font-weight:600;margin-left:18px;font-size:14px}
+.hero{position:relative;text-align:center;padding:70px 22px 50px;background:radial-gradient(ellipse at 50% -10%,rgba(155,108,255,.18),transparent 60%),radial-gradient(ellipse at 80% 20%,rgba(231,177,58,.10),transparent 55%)}
+.eyebrow{text-transform:uppercase;letter-spacing:.28em;font-size:12px;font-weight:800;color:var(--gold)}
+.hero h1{font-size:clamp(34px,7vw,62px);line-height:1.05;margin:.25em 0 .15em;background:linear-gradient(120deg,#fff,var(--gold) 60%,var(--cyan));-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+.hero .sub{font-size:clamp(17px,2.4vw,21px);color:var(--mut);max-width:680px;margin:0 auto 1.4em}
+.cta{display:inline-flex;gap:10px;align-items:center;font-weight:800;border-radius:999px;padding:12px 24px;margin:6px}
+.cta-prime{background:linear-gradient(135deg,var(--gold),var(--cyan));color:#0a0710}
+.cta-ghost{border:1px solid var(--line);color:var(--txt)}
+.phi{font-size:13px;color:var(--mut2);margin-top:18px;font-family:ui-monospace,monospace}
+section{padding:42px 0;border-top:1px solid var(--line)}
+h2{font-size:clamp(24px,4vw,34px);margin:0 0 .5em}
+h3{margin:1.4em 0 .4em;color:var(--gold)}
+.lede{color:var(--mut);font-size:18px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:12px;margin:18px 0}
+.fcard{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:13px 15px}
+.fcard b{color:var(--txt)}.fcard span{display:block;color:var(--mut2);font-size:13px;margin-top:3px}
+.fnum{font-family:ui-monospace,monospace;color:var(--violet);font-size:12px;font-weight:700}
+.math{background:var(--bg2);border:1px solid var(--line);border-left:3px solid var(--gold);border-radius:0 8px 8px 0;padding:10px 16px;margin:12px 0;overflow-x:auto}
+.demo{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px 20px;margin:16px 0}
+.demo h3{margin-top:0;color:var(--cyan)}
+.demo canvas{width:100%;max-width:100%;background:#080810;border-radius:8px;border:1px solid var(--line)}
+.row{display:flex;gap:12px;flex-wrap:wrap;align-items:center;margin:10px 0}
+.row label{font-size:13px;color:var(--mut)}
+input[type=range]{accent-color:var(--gold)}
+input[type=text]{background:#080810;border:1px solid var(--line);color:var(--txt);border-radius:8px;padding:9px 12px;font-size:14px}
+button.go{background:var(--card);border:1px solid var(--cyan);color:var(--txt);border-radius:8px;padding:9px 16px;font-weight:700;cursor:pointer}
+button.go:hover{background:rgba(0,229,255,.1)}
+.meter{height:10px;background:#080810;border:1px solid var(--line);border-radius:999px;overflow:hidden}
+.meter span{display:block;height:100%;background:linear-gradient(90deg,var(--gold),var(--cyan))}
+.bars{display:flex;gap:3px;align-items:flex-end;height:90px;margin-top:8px}
+.bars i{flex:1;background:linear-gradient(180deg,var(--cyan),var(--violet));border-radius:2px 2px 0 0;min-height:2px}
+.mono{font-family:ui-monospace,monospace;font-size:13px;color:var(--mut)}
+.note{background:rgba(231,177,58,.07);border-left:3px solid var(--gold);padding:10px 14px;border-radius:0 8px 8px 0;color:var(--mut);font-size:14px;margin:10px 0}
+.cites{font-size:13px;color:var(--mut2)}.cites a{color:var(--mut)}
+footer{border-top:1px solid var(--line);background:var(--bg2);padding:34px 0;color:var(--mut2);font-size:14px;margin-top:20px}
+footer a{color:var(--mut)}
+code{background:#080810;border:1px solid var(--line);border-radius:5px;padding:1px 6px;font-size:13px;color:var(--cyan)}
+pre{background:#080810;border:1px solid var(--line);border-radius:10px;padding:14px;overflow-x:auto;font-size:13px}
+</style>
+</head>
+<body>
+<header class="top"><div class="wrap">
+  <span class="brand">SEFERIM <b>AGI</b></span>
+  <nav><a href="#systems">Systems</a><a href="#math">Math</a><a href="#demos">Demos</a><a href="https://github.com/Janady13/seferim-core" rel="noopener">GitHub</a><a href="https://thataiguy.org/">ThatAIGuy</a></nav>
+</div></header>
+
+<div class="hero">
+  <div class="eyebrow">ThatAIGuyCore · G¹⁶ Federation</div>
+  <h1>An Artificial Brain<br>Built on the Golden Ratio</h1>
+  <p class="sub">SEFERIM is a 16-dimensional dynamical-systems substrate for artificial cognition — sixteen coupled “cognitive families” evolving a meta-state under the golden ratio φ. 69 documented equations, an open-source reference implementation, and live demos you can run right here.</p>
+  <a class="cta cta-prime" href="https://github.com/Janady13/seferim-core" rel="noopener">★ Star on GitHub</a>
+  <a class="cta cta-ghost" href="#demos">Run the live demos ↓</a>
+  <div class="phi">φ = (1 + √5) / 2 = 1.6180339887498948…</div>
+</div>
+
+<main class="wrap">
+
+<section id="overview">
+  <h2>What SEFERIM is</h2>
+  <p class="lede">Most neural systems are opaque weight matrices. SEFERIM / ThatAIGuyCore is the opposite: a small, fully-deterministic mathematical substrate where every dynamic is a named, documented equation. Cognition is modeled as a 16-dimensional meta-state Ψ updated each tick by sixteen cognitive families, blended with golden-ratio momentum, gated by stability, and normalized so it can approach but never exceed natural limits.</p>
+  <p>The reference implementation in <a href="https://github.com/Janady13/seferim-core" rel="noopener">seferim-core</a> is zero-dependency JavaScript — it runs in this page and in Node. Every function cites the spec section it implements, and the test suite verifies the math against canonical references (including the FNV-1a hash test vectors).</p>
+</section>
+
+<section id="systems">
+  <h2>The 13 systems</h2>
+  <p class="lede">From constants to a federation of conscious agents.</p>
+  <div class="grid">
+    <div class="fcard"><span class="fnum">§1</span><b>Constants</b><span>φ, δ, τ</span></div>
+    <div class="fcard"><span class="fnum">§2</span><b>Golden basis</b><span>ψ_k frequency encoding</span></div>
+    <div class="fcard"><span class="fnum">§3</span><b>16 cognitive families</b><span>the G¹⁶ dynamics</span></div>
+    <div class="fcard"><span class="fnum">§4</span><b>Meta-state core</b><span>φ-correction + gating</span></div>
+    <div class="fcard"><span class="fnum">§5</span><b>Objective Ω</b><span>free-energy-style</span></div>
+    <div class="fcard"><span class="fnum">§6</span><b>DNA holographic memory</b><span>golden-basis recall</span></div>
+    <div class="fcard"><span class="fnum">§7</span><b>Gate5000</b><span>binary substrate</span></div>
+    <div class="fcard"><span class="fnum">§8</span><b>Neural brain</b><span>88 agents (dna_v9)</span></div>
+    <div class="fcard"><span class="fnum">§9</span><b>Consciousness engine</b><span>374-D binding field</span></div>
+    <div class="fcard"><span class="fnum">§10</span><b>Lattice engine</b><span>golden kernels + Hebbian</span></div>
+    <div class="fcard"><span class="fnum">§11</span><b>Federation cross-talk</b><span>coupled agents</span></div>
+    <div class="fcard"><span class="fnum">§12–13</span><b>Activations & hashing</b><span>softsign, σ, FNV-1a</span></div>
+  </div>
+</section>
+
+<section id="math">
+  <h2>The core mathematics</h2>
+  <h3>Golden basis function (§2.1)</h3>
+  <p>Knowledge is encoded across sixteen golden-ratio frequency bands — a distributed, holographic representation.</p>
+  <div class="math">$$\psi_k(x) = \sin(2\pi\,\varphi^{k}\,x) + \cos(2\pi\,\varphi^{k}\,x), \qquad k = 0\ldots15$$</div>
+  <h3>Meta-state update (§4)</h3>
+  <p>Each family is applied and weighted, blended with golden-ratio momentum, gated by stability, and normalized:</p>
+  <div class="math">$$\Psi''_i = \tfrac12\,w_i f_i(\Psi_i) + \tfrac12\big(\Psi_i^{t-1} + (\varphi-1)(\Psi_i^{t}-\Psi_i^{t-1})\big)$$</div>
+  <div class="math">$$b = \frac{1}{1 + \lVert\Psi\rVert^2/\varphi}, \qquad \Psi_i^{t+1} = b\big(\Psi_i^t + \gamma(\Psi''_i - \Psi_i^t)\big)$$</div>
+  <h3>Objective Ω (§5) — a free-energy-style functional</h3>
+  <div class="math">$$\Omega = \underbrace{\alpha_1\tfrac{\lVert\Delta\Psi\rVert_1}{16} + \alpha_2\lVert\Delta\Psi\rVert_2^2}_{\text{surprise}} + \underbrace{(1-b^2)}_{\text{uncertainty}} - \underbrace{u\langle w,\Psi\rangle}_{\text{value}} + \underbrace{\lambda\,dx^2}_{\text{penalty}}$$</div>
+  <h3>Holographic recall (§6)</h3>
+  <div class="math">$$\theta_k \leftarrow (1-\alpha)\theta_k + \alpha\,w\,\psi_k(h(\text{item}))\,\Phi(\text{imp}), \qquad K(q)=\sum_{k=0}^{15}\theta_k\,\psi_k(h(q))$$</div>
+  <p><a href="https://github.com/Janady13/seferim-core/blob/main/docs/MATHEMATICS.md" rel="noopener">→ Read all 69 equations (the complete reference)</a></p>
+</section>
+
+<section id="demos">
+  <h2>Live demos</h2>
+  <p class="lede">Every demo below runs the actual <code>seferim-core</code> library, in your browser, right now.</p>
+
+  <div class="demo">
+    <h3>1 · Golden basis ψ_k</h3>
+    <p class="mono">Each cognitive family k oscillates at a golden-ratio frequency φ^k. Drag k to see the band.</p>
+    <canvas id="cv-basis" height="180"></canvas>
+    <div class="row"><label>k = <b id="kval">3</b></label><input id="kslider" type="range" min="0" max="9" value="3" style="flex:1"></div>
+  </div>
+
+  <div class="demo">
+    <h3>2 · DNA holographic memory</h3>
+    <p class="mono">Teach the substrate words; then query. Recall is the correlation of your query against the 16-D knowledge vector.</p>
+    <div class="row"><input id="learn-in" type="text" placeholder="word to learn (e.g. rhythm)" style="flex:1"><button class="go" id="learn-btn">Learn</button></div>
+    <div class="row"><input id="query-in" type="text" placeholder="query a word" style="flex:1"><button class="go" id="query-btn">Recall</button></div>
+    <div class="mono" id="mem-log">learned: <span id="learned">(none)</span></div>
+    <div class="row"><label>recall</label><div class="meter" style="flex:1"><span id="recall-bar" style="width:0%"></span></div><b id="recall-val" class="mono">—</b></div>
+  </div>
+
+  <div class="demo">
+    <h3>3 · Cognitive core + 88-agent brain</h3>
+    <p class="mono">Run the meta-state and neural brain live. Adjust the drive and watch the 16 families, objective Ω, and emergent consciousness.</p>
+    <div class="row"><label>utility <b id="uval">0.6</b></label><input id="uslider" type="range" min="0" max="100" value="60">
+      <label>stability <b id="sval">0.8</b></label><input id="sslider" type="range" min="0" max="100" value="80">
+      <button class="go" id="run-btn">▶ Run</button></div>
+    <div class="bars" id="fambars"></div>
+    <div class="row mono">Ω <b id="omega">—</b> &nbsp;·&nbsp; consciousness <b id="consc">—</b> &nbsp;·&nbsp; synchrony <b id="sync">—</b></div>
+  </div>
+</section>
+
+<section id="foundations">
+  <h2>Built on real mathematics (honestly)</h2>
+  <p class="lede">SEFERIM synthesizes established theory. We document the lineage precisely rather than overclaim.</p>
+  <div class="grid">
+    <div class="fcard"><b>Free Energy Principle</b><span>Friston — surprise minimization (objective Ω, Family 11)</span></div>
+    <div class="fcard"><b>Information theory</b><span>Shannon; Cover & Thomas — MI & rate-distortion (Families 6–7)</span></div>
+    <div class="fcard"><b>Holographic / VSA memory</b><span>distributed frequency-domain encoding</span></div>
+    <div class="fcard"><b>Hebbian plasticity</b><span>ΔW = η·xᵢ·xⱼ (lattice)</span></div>
+    <div class="fcard"><b>Swarm consensus</b><span>Vicsek / Cucker–Smale (Families 8–9)</span></div>
+    <div class="fcard"><b>Golden-ratio harmonics</b><span>maximally non-resonant frequency bands</span></div>
+  </div>
+  <div class="note"><b>We don't overstate three things:</b> (1) δ = 0.013618 is an <em>empirical</em> phase increment, not 1/φ³; (2) the memory is a golden-ratio frequency-domain Vector Symbolic Architecture, <em>inspired by</em> — not a literal copy of — Plate's circular-convolution HRR; (3) the information-theory families are <em>inspired-by</em> one-step update rules, not exact estimators. Full cited foundations: <a href="https://github.com/Janady13/seferim-core/blob/main/docs/FOUNDATIONS.md" rel="noopener">FOUNDATIONS.md</a>.</div>
+  <p class="cites">Key references: Friston (2010) <a href="https://www.nature.com/articles/nrn2787" rel="noopener">Nature Rev. Neuroscience</a> · Cover & Thomas, <em>Elements of Information Theory</em> · Shannon (1948) · Plate, <em>Holographic Reduced Representations</em> · Hebb (1949) · Vicsek et al.</p>
+</section>
+
+<section id="use">
+  <h2>Use it</h2>
+  <pre><code>npm install seferim-core</code></pre>
+  <pre><code>import { MetaState, DNAMemory, NeuralBrain } from "seferim-core";
+
+const mind = new MetaState({ init: new Array(16).fill(0.1) });
+const out  = mind.step({ dx_norm: 0.3, ed_error: 0.1, utility: 0.6, stability: 0.8 });
+console.log(out.state, "Ω =", out.omega);</code></pre>
+  <p><a class="cta cta-prime" href="https://github.com/Janady13/seferim-core" rel="noopener">View the source on GitHub →</a></p>
+</section>
+
+</main>
+
+<footer><div class="wrap">
+  <p><b>SEFERIM AGI — ThatAIGuyCore</b> is the cognitive-substrate research of <a href="https://thataiguy.org/">Joseph W. Anady · ThatAIGuy.org</a>.</p>
+  <p>Open source (MIT) · <a href="https://github.com/Janady13/seferim-core" rel="noopener">github.com/Janady13/seferim-core</a> · <a href="https://github.com/Janady13/seferim-core/blob/main/docs/MATHEMATICS.md" rel="noopener">Mathematical reference</a> · <a href="https://thataiguy.org/">thataiguy.org</a></p>
+  <p class="mono">φ = 1.6180339887498948…</p>
+</div></footer>
+
+<script type="module">
+import { psi, DNAMemory, MetaState, NeuralBrain, FAMILIES } from "/core/seferim-core.js?v=1";
+
+// Demo 1 — golden basis plot
+const cv = document.getElementById('cv-basis'), kx = document.getElementById('kslider'), kv = document.getElementById('kval');
+function fit(c){ c.width = c.clientWidth * (window.devicePixelRatio||1); }
+function plotBasis(){
+  const k = +kx.value; kv.textContent = k; fit(cv);
+  const ctx = cv.getContext('2d'), W = cv.width, H = cv.height;
+  ctx.clearRect(0,0,W,H); ctx.lineWidth = 2*(window.devicePixelRatio||1);
+  const grad = ctx.createLinearGradient(0,0,W,0); grad.addColorStop(0,'#e7b13a'); grad.addColorStop(1,'#00e5ff'); ctx.strokeStyle = grad;
+  ctx.beginPath();
+  for (let px=0; px<=W; px++){ const x = px/W; const y = psi(k, x); const yy = H/2 - (y/2)*(H*0.42); if(px===0)ctx.moveTo(px,yy); else ctx.lineTo(px,yy); }
+  ctx.stroke();
+  ctx.strokeStyle='rgba(255,255,255,.12)'; ctx.lineWidth=1; ctx.beginPath(); ctx.moveTo(0,H/2); ctx.lineTo(W,H/2); ctx.stroke();
+}
+kx.addEventListener('input', plotBasis); window.addEventListener('resize', plotBasis); plotBasis();
+
+// Demo 2 — holographic memory
+const mem = new DNAMemory(); const learned = [];
+const lIn=document.getElementById('learn-in'), qIn=document.getElementById('query-in');
+document.getElementById('learn-btn').onclick = ()=>{ const w=lIn.value.trim(); if(!w)return; mem.learn(w); learned.push(w); document.getElementById('learned').textContent = learned.slice(-12).join(', '); lIn.value=''; };
+document.getElementById('query-btn').onclick = ()=>{ const q=qIn.value.trim(); if(!q)return; const r=Math.max(0,Math.min(1,mem.queryNorm(q))); document.getElementById('recall-bar').style.width=(r*100).toFixed(0)+'%'; document.getElementById('recall-val').textContent=r.toFixed(3); };
+lIn.addEventListener('keydown',e=>{if(e.key==='Enter')document.getElementById('learn-btn').click();});
+qIn.addEventListener('keydown',e=>{if(e.key==='Enter')document.getElementById('query-btn').click();});
+
+// Demo 3 — cognitive core + brain
+const bars=document.getElementById('fambars'); for(let i=0;i<FAMILIES;i++){const b=document.createElement('i');bars.appendChild(b);}
+const us=document.getElementById('uslider'), ss=document.getElementById('sslider');
+us.oninput=()=>document.getElementById('uval').textContent=(us.value/100).toFixed(2);
+ss.oninput=()=>document.getElementById('sval').textContent=(ss.value/100).toFixed(2);
+const mind=new MetaState({init:new Array(16).fill(0.1)}); const brain=new NeuralBrain();
+let raf=null, t=0;
+function tick(){
+  const inp={dx_norm:Math.sin(t/6)*0.4, ed_error:0.1, utility:us.value/100, stability:ss.value/100};
+  const r=mind.step(inp); const b=brain.step(us.value/100);
+  const els=bars.children; for(let i=0;i<FAMILIES;i++){ els[i].style.height=(Math.min(1,Math.abs(r.state[i])*4)*100).toFixed(0)+'%'; }
+  document.getElementById('omega').textContent=r.omega.toFixed(3);
+  document.getElementById('consc').textContent=b.consciousness.toFixed(3);
+  document.getElementById('sync').textContent=b.synchrony.toFixed(3);
+  t++; raf=requestAnimationFrame(tick);
+}
+document.getElementById('run-btn').onclick=function(){ if(raf){cancelAnimationFrame(raf);raf=null;this.textContent='▶ Run';} else {this.textContent='⏸ Pause';tick();} };
+</script>
+</body>
+</html>
