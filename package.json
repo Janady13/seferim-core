@@ -1,0 +1,17 @@
+{
+  "name": "seferim-core",
+  "version": "1.0.0",
+  "description": "SEFERIM AGI — ThatAIGuyCore: a golden-ratio, 16-dimensional dynamical-systems cognitive substrate (G^16 Federation). Faithful, zero-dependency reference implementation of 69 documented equations.",
+  "type": "module",
+  "main": "src/seferim-core.js",
+  "module": "src/seferim-core.js",
+  "exports": { ".": "./src/seferim-core.js" },
+  "files": ["src/", "docs/", "examples/", "README.md", "LICENSE"],
+  "scripts": { "test": "node test/run.js" },
+  "keywords": ["agi","artificial-general-intelligence","golden-ratio","dynamical-systems","cognitive-architecture","free-energy-principle","holographic-memory","vector-symbolic-architecture","neural","seferim","thataiguy"],
+  "author": "Joseph W. Anady <admin@thataiguy.org> (https://thataiguy.org)",
+  "license": "MIT",
+  "homepage": "https://thataiguy.org/core/",
+  "repository": { "type": "git", "url": "git+https://github.com/Janady13/seferim-core.git" },
+  "bugs": { "url": "https://github.com/Janady13/seferim-core/issues" }
+}
