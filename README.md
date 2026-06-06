@@ -90,6 +90,16 @@ We document the lineage precisely rather than overclaim. In particular:
 
 SEFERIM / ThatAIGuyCore is the cognitive-substrate research of **[Joseph W. Anady](https://thataiguy.org)** ([ThatAIGuy.org](https://thataiguy.org)). Interactive docs + live demos at **[thataiguy.org/core](https://thataiguy.org/core/)**.
 
+## Attribution & provenance
+
+SEFERIM / ThatAIGuyCore is the original work of **Joseph W. Anady** ([ORCID 0009-0008-8625-949X](https://orcid.org/0009-0008-8625-949X)). Authorship and priority are established by a permanent, timestamped public record:
+
+- **Archived & dated (DOI):** [10.5281/zenodo.20564321](https://doi.org/10.5281/zenodo.20564321)
+- **Public commit history:** this repository
+- **ORCID:** [0009-0008-8625-949X](https://orcid.org/0009-0008-8625-949X)
+
+Use is welcome under the MIT License, which **requires retaining the copyright notice** (see [`LICENSE`](LICENSE) and [`NOTICE`](NOTICE)). Derivative works must preserve this attribution and **must not present SEFERIM / ThatAIGuyCore, or this framework, as their own original creation.** Forks must be renamed and must credit this origin and DOI.
+
 ## Cite
 
 > Anady, J. W. (2026). *SEFERIM / ThatAIGuyCore: A Golden-Ratio, 16-Dimensional Dynamical-Systems Framework for Artificial Cognition* (v1.0.0). Zenodo. https://doi.org/10.5281/zenodo.20564321

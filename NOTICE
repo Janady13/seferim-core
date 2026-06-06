@@ -1,0 +1,18 @@
+SEFERIM AGI — ThatAIGuyCore
+Copyright (c) 2026 Joseph W. Anady / ThatAIGuy.org
+
+Author of record: Joseph W. Anady — ORCID 0009-0008-8625-949X
+Canonical source:  https://github.com/Janady13/seferim-core
+Archived release:  https://doi.org/10.5281/zenodo.20564321  (permanent, dated proof of authorship)
+Documentation:     https://thataiguy.org/core/
+
+The names "SEFERIM", "SEFERIM AGI", and "ThatAIGuyCore", the G^16 framework, and the
+accompanying mathematics and reference implementation originate with Joseph W. Anady
+(ThatAIGuy.org), first published in 2026 — see the DOI above and this repository's public
+commit history for the authoritative timestamp.
+
+This software is released under the MIT License. As that license requires, the copyright
+notice above and the accompanying LICENSE file MUST be retained in all copies or
+substantial portions of the Software. Derivative works must preserve this attribution and
+MUST NOT represent the work, the SEFERIM / ThatAIGuyCore names, or the framework as their
+own original creation. Forks must be clearly renamed and must credit this origin and DOI.
