@@ -6,6 +6,7 @@
 [![Version](https://img.shields.io/badge/version-1.0.0-ff10f0.svg)](package.json)
 [![Zero dependencies](https://img.shields.io/badge/dependencies-0-39ff14.svg)](package.json)
 [![Docs](https://img.shields.io/badge/docs-thataiguy.org%2Fcore-blue.svg)](https://thataiguy.org/core/)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20564321.svg)](https://doi.org/10.5281/zenodo.20564321)
 
 **SEFERIM** is a clean-room, zero-dependency reference implementation of **ThatAIGuyCore** — a unified mathematical framework that treats cognition as the evolution of a 16-dimensional meta-state under sixteen coupled "cognitive families," all governed by the golden ratio φ. It is a *substrate*: a small, fully-deterministic engine for golden-ratio dynamical systems, holographic memory, and federated multi-agent coherence.
 
@@ -88,6 +89,14 @@ We document the lineage precisely rather than overclaim. In particular:
 ## About
 
 SEFERIM / ThatAIGuyCore is the cognitive-substrate research of **[Joseph W. Anady](https://thataiguy.org)** ([ThatAIGuy.org](https://thataiguy.org)). Interactive docs + live demos at **[thataiguy.org/core](https://thataiguy.org/core/)**.
+
+## Cite
+
+> Anady, J. W. (2026). *SEFERIM / ThatAIGuyCore: A Golden-Ratio, 16-Dimensional Dynamical-Systems Framework for Artificial Cognition* (v1.0.0). Zenodo. https://doi.org/10.5281/zenodo.20564321
+
+- **DOI:** [10.5281/zenodo.20564321](https://doi.org/10.5281/zenodo.20564321)
+- **OSF project:** https://osf.io/8e9ks/
+- **ORCID:** [0009-0008-8625-949X](https://orcid.org/0009-0008-8625-949X)
 
 ## License
 
